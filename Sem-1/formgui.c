@@ -16,7 +16,7 @@ char status[128]="";
 
 void SaveJson(void)
 {
-    FILE *f=fopen("data.json","w");
+    FILE *f=fopen("data.json","a+");
     if(!f){
         strcpy(status,"Failed to save");
         return;
